@@ -1,0 +1,13 @@
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.24"
+optimizer = true
+optimizer_runs = 200
+# ffi stays off: no test in this repo may run shell commands. Check this setting in anyone else's repo too.
+ffi = false
+
+[fuzz]
+runs = 1000
