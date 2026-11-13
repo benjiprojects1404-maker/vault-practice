@@ -1,7 +1,7 @@
 # Treasury Savings Vault: technical assessment
 
-`src/FeeVault.sol` is an ERC-4626 savings vault for a fintech treasury product (OpenZeppelin 5, Foundry).
-Users deposit a stablecoin and earn yield; withdrawals pay a small fee to the treasury.
+`src/SavingsVault.sol` is an ERC-4626 savings vault for a payments app (OpenZeppelin 5, Foundry).
+Customers deposit a stablecoin and earn yield. There is a deposit cap and a rescue function for tokens sent by mistake.
 
 ## Setup
 
@@ -11,6 +11,6 @@ Users deposit a stablecoin and earn yield; withdrawals pay a small fee to the tr
 
 ## Task (about 45 minutes)
 
-1. Review `src/FeeVault.sol`. Talk us through what it does.
+1. Review `src/SavingsVault.sol`. Talk us through what it does.
 2. The existing tests pass. Are they enough? What's missing?
 3. Find any issues. For each one: explain the impact, prove it with a Foundry test, and propose a fix.
