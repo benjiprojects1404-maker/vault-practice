@@ -1,7 +1,8 @@
-# Term Deposit Vault: technical assessment
+# Flex Saver Vault: technical assessment
 
-`src/LockedVault.sol` is an ERC-4626 term-deposit vault for a neobank (OpenZeppelin 5, Foundry).
-Each deposit is locked for 7 days in exchange for a higher rate. After that, customers can withdraw at any time.
+`src/FlexVault.sol` is an ERC-4626 savings vault for a neobank (OpenZeppelin 5, Foundry).
+Customers can withdraw at any time and pay a 0.1% exit fee to the bank's treasury. The bank pays interest by
+sending funds into the vault, which raises the value of every share.
 
 ## Setup
 
